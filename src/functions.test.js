@@ -15,7 +15,7 @@
 */
 
 /**
- * Define a function named `yelling` that takes an array of
+ * 1) Define a function named `yelling` that takes an array of
  * strings as an argument and returns a new array with all
  * the words forced to uppercase
  *
@@ -30,7 +30,7 @@
 
 /**
  *
- * Define a function named `doubleTrouble` that takes an array of
+ * 2) Define a function named `doubleTrouble` that takes an array of
  * numbers as an argument and returns a new array with all
  * the numbers multiplied by 2
  */
@@ -38,7 +38,7 @@
 // ...
 
 /*
- * Define a function stringyIndexes() that takes an array of
+ * 3) Define a function stringyIndexes() that takes an array of
  * strings as an argument and returns a new array with each string
  * suffixed with " is at index X" where X is the index of the element
  */
@@ -46,21 +46,21 @@
 // ...
 
 /*
- * Define a function onlyTheEvenSurvive that accepts an array of
+ * 4) Define a function onlyTheEvenSurvive that accepts an array of
  * numbers and returns only the elements that are even
  */
 
 // ...
 
 /*
- * Define a function onlyTheEvenIndexedSurvive that accepts an array of
+ * 5) Define a function onlyTheEvenIndexedSurvive that accepts an array of
  * numbers and returns only the elements at indexes that are even
  */
 
 // ...
 
 /*
- * Define a function bestMoviesOfTheYear that accepts an array of
+ * 6)  Define a function bestMoviesOfTheYear that accepts an array of
  * movie objects AND a year and returns the names of movies that are
  * from that year AND have a score more than 90
  *
@@ -76,7 +76,7 @@
 // ...
 
 /*
- * Define a function everyoneIsOdd that accepts an array of
+ * 7) Define a function everyoneIsOdd that accepts an array of
  * numbers and returns true if every element of the array is
  * odd.
  */
@@ -84,7 +84,7 @@
 // ...
 
 /*
- * Define a function findTheNeedle that accepts an array of
+ * 8) Define a function findTheNeedle that accepts an array of
  * strings and returns the one string that contains the word
  * `needle` inside
  */
@@ -92,7 +92,7 @@
 // ...
 
 /*
- * Define a function findTheNeedleIndex that accepts an array of
+ * 9) Define a function findTheNeedleIndex that accepts an array of
  * strings and returns the index of the string that contains
  *  the word `needle` inside
  */
@@ -100,7 +100,7 @@
 // ...
 
 /*
- * Define a function someoneToLove that accepts an array of
+ *` 10)  Define a function someoneToLove that accepts an array of
  * strings and returns true if at least one string is exactly
  * four characters long
  */
@@ -108,7 +108,7 @@
 // ...
 
 /*
- * Define a function mapYourself that accepts an array of
+ * 11) Define a function mapYourself that accepts an array of
  * numbers and returns a new array where each number is doubled.
  *
  * However, you cannot use any of the Array enumerables.
@@ -119,7 +119,7 @@
 // ...
 
 /*
- * Define a function filterYourself that accepts an
+ * 12) Define a function filterYourself that accepts an
  * array of numbers and returns a new array containing
  * only the even numbers.
  *
@@ -131,7 +131,7 @@
 // ...
 
 /*
- * Define a function everyYourself that accepts an
+ * 13) Define a function everyYourself that accepts an
  * array of numbers and returns true if every number
  * in the array is even.
  *
