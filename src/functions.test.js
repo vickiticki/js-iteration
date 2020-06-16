@@ -329,22 +329,26 @@ test('mapYourself()', t => {
 
   Array.prototype.map = () => []
 
-  t.deepEqual(mapYourself([1, 2, 3]), [2, 4, 6])
-  t.deepEqual(mapYourself([9, 0, 1]), [18, 0, 2])
+  const mapFirst = mapYourself([1, 2, 3])
+  const mapSecond = mapYourself([9, 0, 1])
 
   Array.prototype.map = originalMap
+
+  t.deepEqual(mapFirst, [2, 4, 6])
+  t.deepEqual(mapSecond, [18, 0, 2])
 })
 
-test('Function Check - filter yourself', t =>
-  ensureDefined(t, 'filterYourself'))
+test('Function Check - filter yourself', t => ensureDefined(t, 'filterYourself'))
 test('filterYourself()', t => {
   const original = Array.prototype.filter
 
   Array.prototype.filter = () => []
 
-  t.deepEqual(filterYourself([8, 1, 2, 3]), [8, 2])
+  const result = filterYourself([8, 1, 2, 3])
 
   Array.prototype.filter = original
+
+  t.deepEqual(result, [8, 2])
 })
 
 test('Function Check - Every Yourself', t => ensureDefined(t, 'everyYourself'))
@@ -353,10 +357,13 @@ test('everyYourself()', t => {
 
   Array.prototype.every = () => undefined
 
-  t.deepEqual(everyYourself([8, 1, 2, 3]), false)
-  t.deepEqual(everyYourself([8, 10, 22, 38]), true)
+  const everyResultFalse = everyYourself([8, 1, 2, 3])
+  const everyResultTrue = everyYourself([8, 10, 22, 38])
 
   Array.prototype.every = original
+
+  t.deepEqual(everyResultFalse, false)
+  t.deepEqual(everyResultTrue, true)
 })
 
 /* eslint-enable */
