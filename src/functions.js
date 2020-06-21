@@ -19,6 +19,8 @@
  * strings as an argument and returns a new array with all
  * the words forced to uppercase
  *
+ * NOTE: You may *not* use the `forEach` or `for` method.
+ *
  */
 
 const yelling = words => {
@@ -30,6 +32,9 @@ const yelling = words => {
  * 2) Define a function named `doubleTrouble` that takes an array of
  * numbers as an argument and returns a new array with all
  * the numbers multiplied by 2
+ *
+ * NOTE: You may *not* use the `forEach` or `for` method.
+ *
  */
 
 // ...
@@ -38,6 +43,9 @@ const yelling = words => {
  * 3) Define a function stringyIndexes() that takes an array of
  * strings as an argument and returns a new array with each string
  * suffixed with " is at index X" where X is the index of the element
+ *
+ * NOTE: You may *not* use the `forEach` or `for` method.
+ *
  */
 
 // ...
@@ -45,6 +53,9 @@ const yelling = words => {
 /*
  * 4) Define a function onlyTheEvenSurvive that accepts an array of
  * numbers and returns only the elements that are even
+ *
+ * NOTE: You may *not* use the `forEach` or `for` method.
+ *
  */
 
 // ...
@@ -52,6 +63,9 @@ const yelling = words => {
 /*
  * 5) Define a function onlyTheEvenIndexedSurvive that accepts an array of
  * numbers and returns only the elements at indexes that are even
+ *
+ * NOTE: You may *not* use the `forEach` or `for` method.
+ *
  */
 
 // ...
@@ -68,6 +82,9 @@ const yelling = words => {
  *   year: "2017",
  *   score: 99
  * }
+ *
+ * NOTE: You may *not* use the `forEach` or `for` method.
+ *
  */
 
 // ...
@@ -76,6 +93,9 @@ const yelling = words => {
  * 7) Define a function everyoneIsOdd that accepts an array of
  * numbers and returns true if every element of the array is
  * odd.
+ *
+ * NOTE: You may *not* use the `forEach` or `for` method.
+ *
  */
 
 // ...
@@ -84,6 +104,9 @@ const yelling = words => {
  * 8) Define a function findTheNeedle that accepts an array of
  * strings and returns the one string that contains the word
  * `needle` inside
+ *
+ * NOTE: You may *not* use the `forEach` or `for` method.
+ *
  */
 
 // ...
@@ -92,6 +115,9 @@ const yelling = words => {
  * 9) Define a function findTheNeedleIndex that accepts an array of
  * strings and returns the index of the string that contains
  *  the word `needle` inside
+ *
+ * NOTE: You may *not* use the `forEach` or `for` method.
+ *
  */
 
 // ...
@@ -100,6 +126,9 @@ const yelling = words => {
  *` 10)  Define a function someoneToLove that accepts an array of
  * strings and returns true if at least one string is exactly
  * four characters long
+ *
+ * NOTE: You may *not* use the `forEach` or `for` method.
+ *
  */
 
 // ...
