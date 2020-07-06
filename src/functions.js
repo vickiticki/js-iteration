@@ -134,37 +134,41 @@ const yelling = words => {
 // ...
 
 /*
- * 11) Define a function mapYourself that accepts an array of
- * numbers and returns a new array where each number is doubled.
+ * 11)  Define a function objectKeys that accepts an object of
+ *      the form below and returns an array of the object key followed
+ *      by a dash and then the title
  *
- * However, you cannot use any of the Array enumerables.
+ *      NOTE: You'll need to use either:
+ *            Object.keys: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys
+ *        or  Object.entries: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries
+ *        along with `map` to solve this
  *
- * So no using forEach, map, filter, reduce, etc.
+ *      NOTE: The keys will be different every time this code is tested. That is, it won't always be `pandas` and `miniatures`
+ *
+ *      Example object
+ *
+ *      {
+ *        "pandas": {
+ *          "title": "Panda Bears",
+ *          "description": "Pandas are bears native to south-central China, and are objectively the cutest animals on earth.",
+ *        },
+ *        "miniatures": {
+ *          "title": "Miniature Painting",
+ *          "description": "I enjoy painting miniatures from board games. I've been painting since early 2018, here's some of my work.",
+ *        }
+ *      }
+ *
+ *      Example expected return:
+ *
+ *      ['pandas - Panda Bears', 'miniatures - Miniature Painting']
+ *
+ * NOTE: You may *not* use the `forEach` or `for` method.
+ *
  */
 
-// ...
-
-/*
- * 12) Define a function filterYourself that accepts an
- * array of numbers and returns a new array containing
- * only the even numbers.
- *
- * However, you cannot use any of the Array enumerables.
- *
- * So no using forEach, map, filter, reduce, etc.
- */
-
-// ...
-
-/*
- * 13) Define a function everyYourself that accepts an
- * array of numbers and returns true if every number
- * in the array is even.
- *
- * However, you cannot use any of the Array enumerables.
- *
- * So no using forEach, map, filter, reduce, etc.
- */
+// function objectKeys(objectOfHobbies) {
+//   // Your code here
+// }
 
 // ...
 
@@ -394,33 +398,37 @@ const tests = [
     methodName: 'someoneToLove',
     test: () => {
       return (
-        comapre(someoneToLove(['how', 'now', 'brown', 'cow']), false) ||
+        compare(someoneToLove(['how', 'now', 'brown', 'cow']), false) ||
         compare(someoneToLove(['how', 'now', 'blue', 'cow']), true)
       )
     }
   },
   {
-    methodName: 'mapYourself',
+    methodName: 'objectKeys',
     test: () => {
-      return (
-        compare(mapYourself([1, 2, 3]), [2, 4, 6]) &&
-        compare(mapYourself([9, 0, 1]), [18, 0, 2])
+      function getRandomInt(max) {
+        return Math.floor(Math.random() * Math.floor(max))
+      }
+
+      const objectOfHobbies = {
+        [`hobby-${getRandomInt(500)}`]: {
+          title: `Panda ${getRandomInt(500)} Bears`,
+          description: `Pandas are bears native to south-central China, and are objectively the cutest animals on earth. ${getRandomInt(
+            500
+          )}`
+        },
+        miniatures: {
+          title: `Miniature ${getRandomInt(500)} Painting`,
+          description: `I enjoy painting miniatures from board games. I've been painting since early 2018, here's some of my work. ${getRandomInt(
+            500
+          )}`
+        }
+      }
+
+      const answer = Object.keys(objectOfHobbies).map(
+        key => `${key} - ${objectOfHobbies[key].title}`
       )
-    }
-  },
-  {
-    methodName: 'filterYourself',
-    test: () => {
-      return compare(filterYourself([8, 1, 2, 3]), [8, 2])
-    }
-  },
-  {
-    methodName: 'everyYourself',
-    test: () => {
-      return (
-        compare(everyYourself([8, 1, 2, 3]), false) &&
-        compare(everyYourself([8, 10, 22, 38]), true)
-      )
+      return compare(objectKeys(objectKeys), answer)
     }
   }
 ]
