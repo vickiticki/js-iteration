@@ -242,7 +242,7 @@ const tests = [
     }
   },
   {
-    methodName: 'stringyIndex',
+    methodName: 'stringyIndexes',
     test: () => {
       return compare(stringyIndexes(['how', 'now', 'brown', 'cow']), [
         'how is at index 0',
@@ -264,7 +264,7 @@ const tests = [
     }
   },
   {
-    methodName: 'onlyTheEvenIndexSurvive',
+    methodName: 'onlyTheEvenIndexedSurvive',
     test: () => {
       return compare(
         onlyTheEvenIndexedSurvive([
@@ -458,7 +458,7 @@ tests.forEach(test => {
 
   switch (testResult) {
     case 'undefined':
-      console.log(chalk.yellow(`${paddedTestName} ⚡️⚡️ not defined️ ⚡️️⚡️`))
+      console.log(chalk.yellow(`${paddedTestName} ⚡️⚡️ not defined ⚡️️⚡️`))
       break
     case '':
       totalPassing++
