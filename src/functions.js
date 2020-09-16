@@ -428,7 +428,7 @@ const tests = [
       const answer = Object.keys(objectOfHobbies).map(
         key => `${key} - ${objectOfHobbies[key].title}`
       )
-      return compare(objectKeys(objectKeys), answer)
+      return compare(objectKeys(objectOfHobbies), answer)
     }
   }
 ]
@@ -458,7 +458,7 @@ tests.forEach(test => {
 
   switch (testResult) {
     case 'undefined':
-      console.log(chalk.yellow(`${paddedTestName} ⚡️⚡️ not defined ⚡️️⚡️`))
+      console.log(chalk.yellow(`${paddedTestName} ⚡️⚡️ not defined️ ⚡️️⚡️`))
       break
     case '':
       totalPassing++
