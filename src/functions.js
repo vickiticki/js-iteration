@@ -1,6 +1,6 @@
 /*
 
-   Welcome to JS Interation
+   Welcome to JS Iteration
 
    Down below you will find instructions for code to write.
 
