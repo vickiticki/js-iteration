@@ -23,7 +23,9 @@
  *
  */
 
-const yelling = words => {
+// For this one, I'm giving you an example of defining a function.
+// For the rest, you'll be on your own.
+function yelling(words) {
   // Your code here
 }
 
