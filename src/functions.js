@@ -9,6 +9,10 @@
    your work each time you save. If a test is failing either you have not yet
    defined that function or you have not defined it correctly.
 
+   Each section describes WHAT the function is to do. Uncomment the function
+   declaration code and fill in the logic to make the function do the behavior
+   that is requested.
+
    Once you finish a function and have it correct, the test will tell you if/how
    the next function is working.
 
@@ -23,11 +27,12 @@
  *
  */
 
-// For this one, I'm giving you an example of defining a function.
-// For the rest, you'll be on your own.
-function yelling(words) {
-  // Your code here
-}
+// Uncomment the function below. Then underneath, or replacing, the
+// line "// Your code here", write your implementation code.
+
+// function yelling(words) {
+//   // Your code here
+// }
 
 /**
  *
@@ -39,10 +44,12 @@ function yelling(words) {
  *
  */
 
-// ...
+// function doubleTrouble(numbers) {
+//   // Your code here
+// }
 
 /*
- * 3) Define a function stringyIndexes() that takes an array of
+ * 3) Define a function named `stringyIndexes` that takes an array of
  * strings as an argument and returns a new array with each string
  * suffixed with " is at index X" where X is the index of the element
  *
@@ -50,17 +57,21 @@ function yelling(words) {
  *
  */
 
-// ...
+// function stringyIndexes(strings) {
+//   // Your code here
+// }
 
 /*
- * 4) Define a function onlyTheEvenSurvive that accepts an array of
+ * 4) Define a function named onlyTheEvenSurvive that accepts an array of
  * numbers and returns only the elements that are even
  *
  * NOTE: You may *not* use the `forEach` or `for` method.
  *
  */
 
-// ...
+// function onlyTheEvenSurvive(numbers) {
+//   // Your code here
+// }
 
 /*
  * 5) Define a function onlyTheEvenIndexedSurvive that accepts an array of
@@ -70,7 +81,9 @@ function yelling(words) {
  *
  */
 
-// ...
+// function onlyTheEvenIndexedSurvive(numbers) {
+//   // Your code here
+// }
 
 /*
  * 6)  Define a function bestMoviesOfTheYear that accepts an array of
@@ -89,7 +102,9 @@ function yelling(words) {
  *
  */
 
-// ...
+// function bestMoviesOfTheYear(movieObjectArray) {
+//   // Your code here
+// }
 
 /*
  * 7) Define a function everyoneIsOdd that accepts an array of
@@ -100,7 +115,9 @@ function yelling(words) {
  *
  */
 
-// ...
+// function everyoneIsOdd(numbers) {
+//   // Your code here
+// }
 
 /*
  * 8) Define a function findTheNeedle that accepts an array of
@@ -111,7 +128,9 @@ function yelling(words) {
  *
  */
 
-// ...
+// function findTheNeedle(strings) {
+//   // Your code here
+// }
 
 /*
  * 9) Define a function findTheNeedleIndex that accepts an array of
@@ -122,7 +141,9 @@ function yelling(words) {
  *
  */
 
-// ...
+// function findTheNeedleIndex(strings) {
+//   // Your code here
+// }
 
 /*
  *` 10)  Define a function someoneToLove that accepts an array of
@@ -133,7 +154,9 @@ function yelling(words) {
  *
  */
 
-// ...
+// function someoneToLove(strings) {
+//   // Your code here
+// }
 
 /*
  * 11)  Define a function objectKeys that accepts an object of
@@ -172,9 +195,58 @@ function yelling(words) {
 //   // Your code here
 // }
 
-// ...
-
 /**
+ *
+ *                            STOP
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *                           STOP
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
  * NOTE: Don't modify anything below this line...
  *
  *
