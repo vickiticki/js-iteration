@@ -74,9 +74,10 @@ function stringyIndexes(strings) {
  *
  */
 
-// function onlyTheEvenSurvive(numbers) {
-//   // Your code here
-// }
+function onlyTheEvenSurvive(numbers) {
+  //   // Your code here
+  return numbers.filter(number => number % 2 === 0)
+}
 
 /*
  * 5) Define a function onlyTheEvenIndexedSurvive that accepts an array of
@@ -86,9 +87,12 @@ function stringyIndexes(strings) {
  *
  */
 
-// function onlyTheEvenIndexedSurvive(numbers) {
-//   // Your code here
-// }
+function onlyTheEvenIndexedSurvive(numbers) {
+  //   // Your code here
+  return numbers.filter(number => numbers.indexOf(number) % 2 === 0)
+
+  // wtffffff
+}
 
 /*
  * 6)  Define a function bestMoviesOfTheYear that accepts an array of
@@ -107,9 +111,13 @@ function stringyIndexes(strings) {
  *
  */
 
-// function bestMoviesOfTheYear(movieObjectArray) {
-//   // Your code here
-// }
+function bestMoviesOfTheYear(movieObjectArray, year) {
+  //   // Your code here
+  const newArray = movieObjectArray.filter(
+    movie => movie.score > 90 && movie.year === year
+  )
+  return newArray.map(movie => movie.name)
+}
 
 /*
  * 7) Define a function everyoneIsOdd that accepts an array of
@@ -120,9 +128,10 @@ function stringyIndexes(strings) {
  *
  */
 
-// function everyoneIsOdd(numbers) {
-//   // Your code here
-// }
+function everyoneIsOdd(numbers) {
+  //   // Your code here
+  return numbers.filter(number => number % 2 === 0).length === 0
+}
 
 /*
  * 8) Define a function findTheNeedle that accepts an array of
@@ -133,9 +142,10 @@ function stringyIndexes(strings) {
  *
  */
 
-// function findTheNeedle(strings) {
-//   // Your code here
-// }
+function findTheNeedle(strings) {
+  //   // Your code here
+  return strings.find(string => string.includes('needle'))
+}
 
 /*
  * 9) Define a function findTheNeedleIndex that accepts an array of
@@ -146,9 +156,10 @@ function stringyIndexes(strings) {
  *
  */
 
-// function findTheNeedleIndex(strings) {
-//   // Your code here
-// }
+function findTheNeedleIndex(strings) {
+  //   // Your code here
+  return strings.findIndex(string => string.includes('needle'))
+}
 
 /*
  *` 10)  Define a function someoneToLove that accepts an array of
@@ -159,9 +170,10 @@ function stringyIndexes(strings) {
  *
  */
 
-// function someoneToLove(strings) {
-//   // Your code here
-// }
+function someoneToLove(strings) {
+  //   // Your code here
+  return strings.filter(string => string.length === 4).length != 0
+}
 
 /*
  * 11)  Define a function objectKeys that accepts an object of
@@ -196,9 +208,16 @@ function stringyIndexes(strings) {
  *
  */
 
-// function objectKeys(objectOfHobbies) {
-//   // Your code here
-// }
+function objectKeys(objectOfHobbies) {
+  //   // Your code here
+
+  // return Object.keys(objectOfHobbies).map(hobby => hobby + ' - ' + hobby.title)
+  // that didn't work
+
+  return Object.keys(objectOfHobbies).map(
+    hobby => hobby + ' - ' + objectOfHobbies[hobby].title
+  )
+}
 
 /**
  *
