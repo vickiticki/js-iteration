@@ -61,6 +61,9 @@ function doubleTrouble(numbers) {
 
 function stringyIndexes(strings) {
   //   // Your code here
+  return strings.map(
+    string => string + ' is at index ' + strings.indexOf(string)
+  )
 }
 
 /*
