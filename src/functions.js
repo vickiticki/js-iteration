@@ -89,9 +89,10 @@ function onlyTheEvenSurvive(numbers) {
 
 function onlyTheEvenIndexedSurvive(numbers) {
   //   // Your code here
-  return numbers.filter(number => numbers.indexOf(number) % 2 === 0)
+  // return numbers.filter(number => numbers.indexOf(number) % 2 === 0)
+  // why doesn't this work?
 
-  // wtffffff
+  return numbers.filter((number, index) => index % 2 === 0)
 }
 
 /*
