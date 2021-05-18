@@ -30,9 +30,10 @@
 // Uncomment the function below. Then underneath, or replacing, the
 // line "// Your code here", write your implementation code.
 
-// function yelling(words) {
-//   // Your code here
-// }
+function yelling(words) {
+  //   // Your code here
+  return words.map(word => word.toUpperCase())
+}
 
 /**
  *
@@ -44,9 +45,10 @@
  *
  */
 
-// function doubleTrouble(numbers) {
-//   // Your code here
-// }
+function doubleTrouble(numbers) {
+  //   // Your code here
+  return numbers.map(number => number * 2)
+}
 
 /*
  * 3) Define a function named `stringyIndexes` that takes an array of
@@ -57,9 +59,9 @@
  *
  */
 
-// function stringyIndexes(strings) {
-//   // Your code here
-// }
+function stringyIndexes(strings) {
+  //   // Your code here
+}
 
 /*
  * 4) Define a function named onlyTheEvenSurvive that accepts an array of
